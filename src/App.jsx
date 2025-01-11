@@ -6,8 +6,8 @@ import data from "./data";
 export default function App() {
   const entryElements = data.map((entry) => {
     return (
-      // eslint-disable-next-line react/jsx-key
       <Entry
+        key={entry.id}
         img={entry.img}
         title={entry.title}
         country={entry.country}
