@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function Entry(props) {
   return (
     <article className="journal-entry">
