@@ -1,5 +1,13 @@
 @import "normalize.css";
 
+body {
+  font-family: Inter;
+}
+
+.container {
+  margin: 45px 40px;
+}
+
 header {
   background-color: #f55a5a;
   display: flex;
@@ -17,5 +25,48 @@ header > img {
 header > h1 {
   font-size: 0.9rem;
   font-weight: 500;
-  font-family: Inter;
+}
+
+article.journal-entry {
+  display: flex;
+  gap: 19px;
+  margin-bottom: 36px;
+}
+
+article.journal-entry .marker {
+  width: 7px;
+  margin-right: 4px;
+}
+
+.info-container span.country {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+}
+
+.info-container a {
+  color: #2b283a;
+  font-size: 0.7rem;
+}
+
+.info-container a:visited {
+  color: #918e9b;
+}
+
+.info-container h2.entry-title {
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+
+.info-container p.trip-dates {
+  font-weight: bold;
+}
+
+.info-container p.entry-text {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
